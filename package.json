@@ -1,0 +1,11 @@
+{
+  "name": "toucan-toco-slack-app",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@slack/bolt": "^1.4.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5"
+  }
+}
