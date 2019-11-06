@@ -1,0 +1,8 @@
+authtoken: 1TC3bH8Az7UGbU7FPd0iy7BF4op_4R4PjUoWMjifzFKPUqBCo
+tunnels:
+  api:
+    proto: http
+    addr: 3000
+  filesystem:
+    proto: http
+    addr: file:///Users/wgorge/dev/toucan-toco-slack-app/
