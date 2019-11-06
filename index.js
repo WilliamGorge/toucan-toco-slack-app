@@ -11,8 +11,8 @@ async function login() {
     method: 'POST',
     uri: `https://api-${INSTANCE}.toucantoco.com/login`,
     body: {
-      username: 'slackbot@dev+toucantoco.com',
-      password: 'S7QYeIN4kgcA',
+      username: `${process.env.TOUCAN_TOCO_USERNAME}`,
+      password: `${process.env.TOUCAN_TOCO_PASSWORD}`,
     },
     json: true,
   })).token;
@@ -119,7 +119,7 @@ function displayStory(say, title, filename, footerLink) {
           'type': 'plain_text',
           'text': `Toucan Toco - "${title}"`,
         },
-        'image_url': `https://d8f6fb52.ngrok.io/${filename}.png`,
+        'image_url': `${process.env.FILE_SYSTEM_URL}/${filename}.png`,
         'alt_text': `Toucan Toco - "${title}"`,
       },
       {
